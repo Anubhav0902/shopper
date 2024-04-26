@@ -17,7 +17,7 @@ const LoginSignup = () => {
     console.log("login func executed", formData)
     let responseData;
 
-    await fetch('http://localhost:4000/Shopper/auth/signin',{
+    await fetch('https://shopper-y4ja.onrender.com/Shopper/auth/signin',{
       method: 'POST',
       headers:{
         Accept: 'application/form-data',
@@ -40,7 +40,7 @@ const LoginSignup = () => {
     console.log("signup func executed", formData)
     let responseData;
 
-    await fetch('http://localhost:4000/Shopper/auth/signup',{
+    await fetch('https://shopper-y4ja.onrender.com/Shopper/auth/signup',{
       method: 'POST',
       headers:{
         Accept: 'application/form-data',
