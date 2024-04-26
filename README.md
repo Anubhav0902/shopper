@@ -8,13 +8,13 @@ This project is a full-fledged Ecommerce Website built using the MERN (MongoDB, 
   - React.js: A popular JavaScript library for building interactive user interfaces.
   - Redux: A predictable state container for managing application state.
   - React Router: A routing library for React.js applications.
-
   
 - **Backend:**
   - Node.js: A versatile JavaScript runtime environment for building server-side applications.
   - Express.js: A minimalist web application framework for Node.js, enabling robust API development.
   - MongoDB: A flexible NoSQL database for storing and managing application data.
   - Mongoose: An elegant MongoDB object modeling tool for Node.js, providing schema-based solutions.
+  - Multer: A middleware for handling multipart/form-data, used for uploading images.
   
 - **Authentication:**
   - JSON Web Tokens (JWT): A compact and self-contained method for securely transmitting information between parties as a JSON object.
@@ -29,8 +29,8 @@ This project is a full-fledged Ecommerce Website built using the MERN (MongoDB, 
 
 ### Admin Portal: https://shopper-admin-bay.vercel.app/
 - Product management: Admins can effortlessly add, edit, and delete products as needed.
-- Order handling: Comprehensive order management features enable admins to view, update order statuses, and generate reports for analysis.
-- User administration: Admins can manage user accounts, including viewing users, updating roles, and handling authentication-related tasks.
+- Add new products: Admins can add products with details such as name, image, price, and other relevant information. Multer middleware is utilized for handling image uploads.
+- View product list: Admins have access to a comprehensive list of all products, allowing for easy management and editing as needed.
 
 ## Author
-This project was meticulously crafted by [Your Name].
+This project was meticulously crafted by Anubhav Saxena.
