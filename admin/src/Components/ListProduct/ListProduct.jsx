@@ -9,7 +9,7 @@ const ListProduct = () => {
   const [allproducts, setAllProducts] = useState([]);
 
   const fetchInfo = async () => {
-    await fetch("http://localhost:4000/allproducts")
+    await fetch("https://shopper-y4ja.onrender.com/allproducts")
       .then((res) => {
         return res.json();
       })
@@ -25,7 +25,7 @@ const ListProduct = () => {
    
   const remove_product = async (id) => {
     try {
-      const response = await fetch('http://localhost:4000/removeproduct', {
+      const response = await fetch('https://shopper-y4ja.onrender.com/removeproduct', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
