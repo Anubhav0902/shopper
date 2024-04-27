@@ -10,7 +10,7 @@ const Product = require("./models/product.model.js")
 const Users = require("./models/user.model.js");
 require('dotenv').config();
 
-const port = process.env.PORT || 4000;
+const port =  5000;
 
 app.use(express.json());
 app.use(cors());
