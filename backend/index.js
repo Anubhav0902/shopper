@@ -1,4 +1,3 @@
-const port = 4000;
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -9,13 +8,17 @@ const cors = require("cors");
 const { type } = require("os");
 const Product = require("./models/product.model.js")
 const Users = require("./models/user.model.js");
+require('dotenv').config();
+
+const port = process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(cors());
 
 // Database connection with mongoDB
 /** MongoDB setUp */
-mongoose.connect("mongodb+srv://saxenaanubhav790:anubhav123@cluster0.6n38s33.mongodb.net/e-commerce");
+const MongoDB_URL = process.env.MONGODB_URL;
+mongoose.connect(MongoDB_URL);
 
 const db = mongoose.connection;
 
@@ -216,6 +219,7 @@ app.post('/getcart',fetchUser, async(req,res) => {
 */
 const authRoutes = require("./routes/auth.routes.js"); // calling routes
 authRoutes(app); // passing app object
+
 
 
 
