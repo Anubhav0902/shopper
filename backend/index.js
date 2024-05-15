@@ -14,7 +14,7 @@ const port =  5000;
 
 app.use(express.json());
 // Allow requests from specific origins
-const allowedOrigins = ['https://shopper-seven-flame.vercel.app'];
+const allowedOrigins = ['https://shopper-seven-flame.vercel.app','https://shopper-admin-bay.vercel.app/'];
 app.use(cors({
   origin: function(origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
