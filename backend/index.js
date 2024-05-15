@@ -14,7 +14,7 @@ const port =  5000;
 
 app.use(express.json());
 // Allow requests from specific origins
-const allowedOrigins = ['https://shopper-seven-flame.vercel.app','https://shopper-y4ja.onrender.com/allproducts'];
+const allowedOrigins = ['https://shopper-seven-flame.vercel.app', 'https://shopper-y4ja.onrender.com'];
 app.use(cors({
   origin: function(origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
@@ -24,6 +24,7 @@ app.use(cors({
     }
   }
 }));
+
 
 // Database connection with mongoDB
 /** MongoDB setUp */
