@@ -13,17 +13,7 @@ require('dotenv').config();
 const port =  5000;
 
 app.use(express.json());
-// Allow requests from specific origins
-const allowedOrigins = ['https://shopper-seven-flame.vercel.app', 'https://shopper-y4ja.onrender.com'];
-app.use(cors({
-  origin: function(origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  }
-}));
+app.use(cors())
 
 
 // Database connection with mongoDB
